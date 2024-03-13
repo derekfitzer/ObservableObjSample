@@ -11,9 +11,13 @@ struct AddView: View {
     @ObservedObject var progress: UserProgress
     
     var body: some View {
+        Text(progress.playerName)
         Text(String(progress.score))
         Button(String("Add 1")) {
                     progress.score += 1
+                }
+        Button(String("Change Name")) {
+                    progress.playerName = "Sam"
                 }
     }
 }

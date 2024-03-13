@@ -11,7 +11,7 @@ import SwiftUI
 struct ObservableObjSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(progress: sample)
         }
     }
 }
